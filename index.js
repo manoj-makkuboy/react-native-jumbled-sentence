@@ -36,13 +36,13 @@ export default class JumbledSentence extends React.Component{
             state.arrangedArray = newArrangeArray;
             return state;
         })
-        const soundObject = new Audio.Sound();
-        try {
-            await soundObject.loadAsync(require('./assets/sounds/bounce_drum.mp3'));
-            await soundObject.playAsync();
-        } catch (error) {
-            console.log(error)
-        }
+        // const soundObject = new Audio.Sound();
+        // try {
+        //     await soundObject.loadAsync(require('./assets/sounds/bounce_drum.mp3'));
+        //     await soundObject.playAsync();
+        // } catch (error) {
+        //     console.log(error)
+        // }
     }
     handleSubmit(){
     if(this.state.arrangedArray.length == this.len){
@@ -78,13 +78,13 @@ export default class JumbledSentence extends React.Component{
             state.scrambledArray = newJumbleArray;
             return state;
         })
-        const soundObject = new Audio.Sound();
-        try {
-            await soundObject.loadAsync(require('./assets/sounds/pop_mouth.mp3'));
-            await soundObject.playAsync();
-        } catch (error) {
-            console.log(error)
-        }
+        // const soundObject = new Audio.Sound();
+        // try {
+        //     await soundObject.loadAsync(require('./assets/sounds/pop_mouth.mp3'));
+        //     await soundObject.playAsync();
+        // } catch (error) {
+        //     console.log(error)
+        // }
     }
     removeElementFromArray(arr, index){
         return arr.filter((i,ind) => {
